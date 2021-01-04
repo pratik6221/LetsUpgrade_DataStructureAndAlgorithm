@@ -1,0 +1,5 @@
+There's no guarantee that beg+end is representable; but in the second case the intermediate values, 
+as well as the expected result, are no larger than end, so there is no danger of overflow.
+
+The second form can also be used for affine types like pointers and other random-access iterators, 
+which can be subtracted to give a distance, but not added together.
